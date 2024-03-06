@@ -14,6 +14,3 @@ https://obzorposudy.ru/polezno/centr-kvadrata-ego-znacenie-i-osobennosti
 градусы и радианы
 https://ru.wikipedia.org/wiki/Радиан
 https://disk.yandex.ru/d/wRZEM0xmKF5Btg
-GIT
-
-https://github.com/frakiec89/SquareApp
