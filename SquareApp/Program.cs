@@ -11,7 +11,7 @@ int  a = random.Next(4, 8);
 Square square = new Square(a, new Point(x00, y00));
 
 
-Console.WriteLine( $"___Создадим квадрат в  точке [{x00}.{y00}] размером  в  {a} __info____");
+Console.WriteLine( $"___Создадим квадрат в  точке [{x00}.{y00}] размером  в  {a} ");
 Console.WriteLine(square.Info());
 
 
@@ -21,11 +21,13 @@ int moveY =random.Next(-3, 3);
 
 Console.WriteLine($"___ переместим  вдоль x на {moveX}"); ;
 Console.WriteLine($"___ переместим  вдоль y на {moveY}"); ;
+
+square.MoveX(moveX);
+square.MoveY(moveY);
+
 Console.WriteLine(square.Info());
 
-
 double spin = random.Next(-90 , 90);
-
 Console.WriteLine($"_____Повернем на  {spin} градусов____");
 square.Spin(spin);
 
