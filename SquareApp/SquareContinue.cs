@@ -1,5 +1,4 @@
-﻿
-// nocopy 
+﻿// nocopy
 namespace SquareApp
 {
 
@@ -59,7 +58,7 @@ namespace SquareApp
             //Y' = (X - X0) * sin α + (Y - Y0) * cos α + Y0
             newPoint.Y = (point.X - pOfs.X) * sinAngle + (point.Y - pOfs.Y) * cosAngle + pOfs.Y;
 
-            newPoint.X = Math.Round(newPoint.X, 1); // округлим 
+            newPoint.X = Math.Round(newPoint.X, 1);  // округлим 
             newPoint.Y = Math.Round(newPoint.Y, 1);  // округлим 
             return newPoint;
         }

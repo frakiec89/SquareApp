@@ -1,6 +1,4 @@
-﻿
-
-// track 
+﻿// nocopy
 namespace SquareApp
 {
     public class Point
@@ -13,5 +11,19 @@ namespace SquareApp
             X = x;
             Y = y;
         }
+
+        /// <summary>
+        /// Определяет  совпадение точек
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns>Да если точки равны</returns>
+        public bool Equals(Point other) 
+        { 
+            if(other.X == X && other.Y == Y)
+                return true;
+            return false;
+        
+        }
+
     }
 }

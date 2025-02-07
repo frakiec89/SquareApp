@@ -1,5 +1,4 @@
-﻿
-// track 
+﻿// nocopy
 namespace SquareApp
 {
 
@@ -27,11 +26,17 @@ namespace SquareApp
         }
 
 
+        /// <summary>
+        /// startPoint нижней  левый угол квадрата  стороны  которого паралельны оси Ox или  Oy
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="startPoint"></param>
         public Square(double a, Point startPoint) : this(a)
         {
             MoveX(startPoint.X);
             MoveY(startPoint.Y);
         }
+
 
         public Square(Point a, Point b, Point c, Point d)
         {
@@ -57,12 +62,8 @@ namespace SquareApp
             Line line2 = new Line(b, c);
             Line line3 = new Line(c, d);
             Line line4 = new Line(d, a);
-
             Line linetR = new Line(a, c);
-
             Line linetR2 = new Line(b, d);
-
-
 
             double sum = line1.Leght() + line2.Leght() + line3.Leght() + line4.Leght();
 
@@ -91,16 +92,9 @@ namespace SquareApp
             D.X += step;
         }
 
-
-
-
         public string Info()
         {
             return $"Квадрат с координатами a:({A.X}|{A.Y}), b:({B.X}|{B.Y}), c:({C.X}|{C.Y}),D:({D.X}|{D.Y})";
         }
     }
-
-
-
- 
 }
