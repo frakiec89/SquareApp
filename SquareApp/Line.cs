@@ -1,4 +1,4 @@
-﻿// nocopy
+﻿// track
 namespace SquareApp
 {
     public class Line

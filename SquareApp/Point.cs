@@ -22,7 +22,6 @@ namespace SquareApp
             if(other.X == X && other.Y == Y)
                 return true;
             return false;
-        
         }
 
     }
